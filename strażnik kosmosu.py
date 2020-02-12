@@ -59,7 +59,7 @@ for wrog in wrogowie:
     y = random.randint(100, 250)
     wrog.setposition(x, y)
 
-wrogspeed = 1.5
+wrogspeed = 3
 
 pocisk = turtle.Turtle()
 pocisk.color("yellow")
@@ -102,7 +102,7 @@ def strzal_pocisku():
         pocisk.showturtle()
 def czyKolizja(t1, t2):
     odległosc = math.sqrt(math.pow(t1.xcor()-t2.xcor(),2)+math.pow(t1.ycor()-t2.ycor(),2))
-    if odległosc < 15:
+    if odległosc < 20:
         return True
     else:
         return False 
@@ -152,6 +152,7 @@ while True:
         if czyKolizja(straznik, wrog):
             straznik.hideturtle()
             wrog.hideturtle()
+            pocisk.hideturtle
             print('PRZEGRAŁEŚ HAHAHA!!!!')
             break 
 
