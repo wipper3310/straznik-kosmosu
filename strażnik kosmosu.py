@@ -67,6 +67,7 @@ pocisk.shape('triangle')
 pocisk.penup()
 pocisk.speed(0)
 pocisk.setheading(90)
+pocisk.setposition(0,-250)
 pocisk.shapesize(0.5, 0.5)
 pocisk.hideturtle()
 
